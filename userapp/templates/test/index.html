@@ -1,0 +1,16 @@
+<!--These templates are NOT used formally-->
+<!--just used for testing-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>測試</h2> <p><a href="/userapp/registration/">註冊</a></p>
+        {% if request.user.is_authenticated %}
+            <p>{{request.user}} 您已經登入</p>
+        {% else %}
+            <p>您尚未登入<a href="/userapp/login_citizen/">登入</a></p>
+        {% endif %}
+    </body>
+</html>

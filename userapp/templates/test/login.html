@@ -1,0 +1,19 @@
+<!--These templates are NOT used formally-->
+<!--just used for testing-->
+
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="username">用戶名稱:</label>
+            <input type="text" name="username" value="" id="username"> <br />
+            <label for="password">用戶密碼:</label>
+            <input type="password" name="password" value="" id="password"> <br />
+            <label for="user_type">用戶類別:</label>
+            <input type="user_type" name="user_type" value="citizens" id="user_type"> <br />
+            <input type="submit" value="登入" />
+        </form>
+    </body>
+</html>
